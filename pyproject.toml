@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streda"
+version = "1.0.0"
+description = "Shift-aware tri-head risk calibration"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "numpy==2.2.6",
+    "scikit-learn==1.7.2",
+    "scipy==1.15.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
